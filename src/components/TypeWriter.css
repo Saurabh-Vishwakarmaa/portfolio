@@ -1,0 +1,47 @@
+
+.typewriter {
+position: absolute;
+top: 500px;
+left:50px;
+    color: #fcfcfc;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+  }
+  
+  .typewriter-text {
+    font-size: 70px;
+    color: #000000;
+    z-index: 23;
+  }
+  
+  .typewriter-text span {
+    color: #fcfcfc;
+    background-color: #000000;
+    
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+    
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .typewriter-text {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .typewriter-text {
+      font-size: 1.5rem;
+    }
+  }

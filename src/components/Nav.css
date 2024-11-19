@@ -1,0 +1,86 @@
+.Navbar{
+    width: 90vw;
+    display: flex;
+    height: 10vh;
+    color: grey;
+    position: absolute;
+    top:20px;
+    left:10px;
+    font-family: Anton sans-serif;
+    
+    
+    
+}
+.logo{
+    /* margin-left: 0px; */
+    margin-top: -25px;
+    font-weight: bolder;
+    font-size: 20px;
+ 
+ 
+}
+.post{
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.others{
+    padding-left: 500px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.Navother{
+    padding-left: 40px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+
+  }
+  nav ul li {
+    display: inline-block;
+
+  }
+  nav ul li {
+    display: inline-block;
+  }
+ 
+  .Navother {
+    display: inline-block;
+    position: relative; /* Required for pseudo-elements */
+    margin-right: 18px; /* Space between links */
+    text-decoration: none;
+    
+    color: grey;
+    font-weight: 500;
+    padding: 5px 10px;
+    transform: translateX(0); /* Default position */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth text color and transform transition */
+     /* Prevents overflow of pseudo-elements */
+}
+
+.Navother::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background-color: #000; /* Change color as needed */
+    transform: scaleX(0); /* Default state */
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.Navother:hover {
+    color: white; /* Text color when background fills */
+    transform: translateX(-20%); /* Move slightly to the right */
+}
+
+.Navother:hover::before {
+    transform: scaleX(1); /* Fully reveal the background */
+}

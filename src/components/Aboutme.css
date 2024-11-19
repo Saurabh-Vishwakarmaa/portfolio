@@ -1,0 +1,40 @@
+#Aboutme{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 100vh;
+}
+
+.mycontent {
+    position: absolute;
+    width: 90vw;
+    top: 210px;
+    left: 50px;
+    
+    font-size: 45px !important;
+    text-align: start;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100 !important;
+    color: #666;
+  }
+  .Aboutmee{
+    position: absolute;
+    top:50px;
+    width: 60vw;
+    z-index: 24;
+    left: 50px;
+    font-size: 90px !important;
+    text-align: start;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100 !important;
+    color: #E5E5E1;
+
+  }

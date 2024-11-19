@@ -1,0 +1,150 @@
+@keyframes expandUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E5E5E1;
+  color: #333;
+  overflow-x: hidden;
+  animation: expandUp 1.2s ease-out forwards;
+}
+
+.hellow{
+  font-size: 80px;
+  z-index: 1;
+  position: absolute;
+  top:150px;
+  left:50px;
+    font-family: 'Anton', sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.myname {
+  font-size: 150px;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  height: 80vh;
+  width: 100vw;
+  text-align: start;
+  line-height: 170px;
+  transform-origin: bottom;
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 150vh;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content small {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 0;
+}
+/*   <p className='mycontent'>
+         A developer specializing in web and Android apps. I create intuitive, feature-rich applications with seamless user experiences. Let’s collaborate to turn ideas into impactful digital solutions!
+          </p> */
+
+.cta {
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.cta:hover {
+  background: #444;
+}
+
+.hero-image {
+  text-align: center;
+  position: relative;
+  top: 270px;
+  left: 50px;
+  opacity: 0;
+  animation: fadeInRight 1s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.availability {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #666;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+.availability strong {
+  font-size: 2rem;
+}
