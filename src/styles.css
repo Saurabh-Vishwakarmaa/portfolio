@@ -1,0 +1,154 @@
+Project Container Styles
+.project-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    overflow: hidden;
+    font-family: 'Anton' sans-serif;
+  }
+  
+  .project-wrapper {
+    max-width: 90vw;
+    font-family: 'Anton' sans-serif;
+    margin: 0 auto;
+  }
+  
+  .project-title {
+    font-family: 'Anton' sans-serif;
+    display: none; /* Remove the Projects title since we're using numbered sections */
+  }
+  
+  /* Project List and Items */
+  .projects-list {
+    font-family: 'Anton' sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  
+  .project-item {
+    font-family: 'Anton' sans-serif;
+    position: relative;
+    padding-left: 0;
+    border: none;
+    transition: all 0.5s ease;
+  }
+  
+  .project-content {
+    font-family: 'Anton' sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Project Details */
+  .project-details {
+    font-family: 'Anton' sans-serif;
+    padding-right: 0;
+  }
+  
+  .project-name {
+    font-size: 7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-family: 'Anton' sans-serif;
+  }
+  
+  .project-name::before {
+    content: attr(data-number);
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    opacity: 0.9;
+    position: absolute;
+    left: -4rem;
+    top: 1rem;
+  }
+  
+  .project-description {
+    font-size: 1.5rem;
+    color: #888;
+    max-width: 60rem;
+    line-height: 1.4;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Technology Tags */
+  .project-technologies {
+    display: none; /* Remove technology tags to match the minimal design */
+  }
+  
+  /* Link Icon */
+  .project-link {
+    display: none; /* Remove the arrow icon to match the minimal design */
+  }
+  
+  /* Add horizontal line */
+  .project-item::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Hover Effects */
+  .project-item:hover {
+    transform: translateX(20px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .project-name {
+      font-size: 5rem;
+    }
+    
+    .project-name::before {
+      font-size: 2rem;
+      left: -3rem;
+    }
+    
+    .project-description {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-name {
+      font-size: 3.5rem;
+    }
+    
+    .projects-list {
+      gap: 4rem;
+    }
+    
+    .project-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-name {
+      font-size: 2.5rem;
+    }
+    
+    .project-name::before {
+      font-size: 1.5rem;
+      left: -2rem;
+    }
+    
+    .projects-list {
+      gap: 3rem;
+    }
+  }

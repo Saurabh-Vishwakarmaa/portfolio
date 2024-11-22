@@ -9,6 +9,7 @@ import ScrollIndicator from './components/Secondhero'
 import TypeWriter from './components/Animation'
 import Aboutme from './components/Aboutme'
 import StackingCards from './Stackingprojects'
+import Projects from './Projects'
 
 
 
@@ -24,6 +25,7 @@ function App() {
 <ScrollIndicator/>
 <Aboutme/>
 <StackingCards/>
+<Projects/>
 
     </div>
 
