@@ -12,25 +12,25 @@ function Nav(){
     return(
         <div>
 <div className="Navbar">
-<div className="logo">Saurabh</div>
-<div className="post"> Web and App Developer</div>
-{/* <div className="others">
-    <a className="Navother" href="#">Services </a>
-    <a className="Navother" href="#">Works </a>
-    <a className="Navother" href="#">About </a>
-    <a className="Navother" href="#">Contact </a>
-    
-</div> */}
+    <div className="logo"></div>
 
-<nav className="others">
-    <ul>
-    <li><a className="Navother" href="#">Services </a></li>
-    <li><a className="Navother" href="#">Works </a></li>
-    <li><a className="Navother" href="#">About </a></li>
-    <li><a className="Navother" href="#">Contact </a></li>
-    </ul>
-</nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label className="hamburger" htmlFor="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav>
+        <ul>
+            <li><a className="Navother" href="#">Services</a></li>
+            <li><a className="Navother" href="#">Works</a></li>
+            <li><a className="Navother" href="#">About</a></li>
+            <li><a className="Navother" href="#">Contact</a></li>
+        </ul>
+    </nav>
 </div>
+
 
 
 

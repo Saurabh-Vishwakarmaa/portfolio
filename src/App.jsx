@@ -10,6 +10,7 @@ import TypeWriter from './components/Animation'
 import Aboutme from './components/Aboutme'
 import StackingCards from './Stackingprojects'
 import Projects from './Projects'
+import ContactForm from './components/Contactsection'
 
 
 
@@ -26,6 +27,8 @@ function App() {
 <Aboutme/>
 <StackingCards/>
 <Projects/>
+<ContactForm/>
+
 
     </div>
 
